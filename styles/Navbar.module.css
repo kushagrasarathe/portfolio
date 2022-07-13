@@ -2,8 +2,15 @@
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 100;
   min-height: 8vh;
   margin: 0;
   padding: 0.2rem;
-  background-color: darkseagreen;
+  background: rgb(17, 19, 19);
+  
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,1);
+-moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,1);
+box-shadow: 0px 5px 20px 0px rgba(0,0,0,1);
+
+  /* background: rgba(17, 19, 19, 0.775); */
 }
