@@ -1,0 +1,9 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  min-height: 8vh;
+  margin: 0;
+  padding: 0.2rem;
+  background-color: darkseagreen;
+}
