@@ -2,6 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import pfp from "../src/assets/portrait.jpg";
+import github from "../src/assets/github.svg";
+import linkedin from "../src/assets/linkedin.svg";
+import twitter from "../src/assets/twitter.svg";
 
 export default function Home() {
   return (
@@ -13,6 +16,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        {/* <FontAwesomeIcon icon={faFaceRelieved} /> */}
         <div>
           <h1 className={styles.title}>Hey there, I&#x27;m</h1>
           <div className={styles.pfp}>
@@ -37,24 +41,27 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" GitHub   "}
-              <span className={styles.logo}></span>
+              <div className={styles.icon}>
+                <Image src={github} alt="profile image" />
+              </div>
             </a>
             <a
               href="https://linkedin.com/in/kushagra-sarathe"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" LinkedIn   "}
-              <span className={styles.logo}></span>
+              <div className={styles.icon}>
+                <Image src={linkedin} alt="profile image" />
+              </div>
             </a>
             <a
               href="https://twitter.com/kushagrasarathe"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" Twitter   "}
-              <span className={styles.logo}></span>
+              <div className={styles.icon}>
+                <Image src={twitter} alt="profile image" />
+              </div>
             </a>
           </div>
         </div>
