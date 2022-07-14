@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import pfp from "../src/assets/pfp.jpg";
+import pfp from "../src/assets/portrait.jpg";
 import github from "../src/assets/github.svg";
 import linkedin from "../src/assets/linkedin.svg";
 import twitter from "../src/assets/twitter.svg";
@@ -108,9 +108,17 @@ export default function Home() {
             <Image src={hero2} alt="profile image" />
           </div>
           <p>
-            Hi, I&#x27;m Kushagra Sarathe, I&#x27;m a Computer Science Graduate & Frontend
-            Developer based in India.
+            Hi, I&#x27;m Kushagra Sarathe, I&#x27;m a Computer Science Graduate
+            & Frontend Developer based in India. I had been doing bug-bounty
+            hunting for past 2 years and had been reporting security flaws to
+            different companies.
+            <br />
+            Few months back I found my interst in development and since then
+            I&#x27;ve been focusing on sharpening my frontend development skills by
+            participating in different hackathons and building both solo and team
+            projects.
           </p>
+          <p></p>
         </div>
         <h2>Tech Stack</h2>
         <div className={styles.tech}>
@@ -153,13 +161,13 @@ export default function Home() {
         </div>
       </div>
 
-      <div>
+      {/* <div>
         <h2>Projects</h2>
-        
-      <div className={styles.hero1}>
-        <Image src={hero1} alt="profile image" />
-      </div>
-      </div>
+
+        <div className={styles.hero1}>
+          <Image src={hero1} alt="profile image" />
+        </div>
+      </div> */}
     </div>
   );
 }
