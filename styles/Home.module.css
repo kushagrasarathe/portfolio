@@ -1,31 +1,22 @@
 .container {
   padding: 0 2rem;
-  /* color: black; */
 }
 
 .main {
   min-height: 84vh;
-  margin: 120px 0 0px 0px;
+  margin-top: 120px;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   align-items: center;
+
 }
 
 .main h1 {
   font-size: 40px;
   margin: 15px;
-}
-
-.typing_effect {
-  width: 22ch;
-  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-size: 2em;
 }
 
 @keyframes typing {
@@ -41,40 +32,29 @@
 }
 
 .title {
+  text-align: center;
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
 }
 
 .pfp {
   margin: 40px auto;
   max-width: 300px;
   height: auto;
-  transition: transform .2s;
-  /* transform: scale(1.1); */
-
-  /* padding: 5px; */
-  /* border: 3px solid rgb(134, 243, 255);
-  border-radius: 10%; */
+  transition: transform 0.2s;
 }
-
 
 .pfp:hover {
   transform: scale(1.12);
 }
-
 
 .round {
   border-radius: 10%;
 }
 
 .connect {
-  margin: 30px;
+  margin-top: 10px;
 }
 
 .connect a {
@@ -86,36 +66,81 @@
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
-
 }
 
 .icon {
-  max-width: 64px;
-  transition: transform .2s;
-}
+  /* border: 1px solid rgb(80, 80, 80); */
+  max-width: 84px;
+  /* border-radius: 10px; */
+  /* transition: transform 0.2s; */
+  
 
-.icon:hover {
-  transform: scale(1.15);
-}
-
-.about {
-  margin: 80px 50px;
-  /* max-width: 1200px; */
+  border-radius: 10px;
+  font-weight: 600;
   text-align: center;
   font-size: 20px;
   word-spacing: 5px;
   line-height: 1.6;
-
   display: flex;
-  /* justify-content: space-evenly; */
   align-items: center;
+  letter-spacing: 2.5px;
+  cursor: pointer;
+  border: 2px solid;
+  padding: 0.25rem 0.5rem;
+  /* box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px; */
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  -webkit-box-shadow: 2px 2px 0px 2px rgba(202, 158, 255, 1);
+  -moz-box-shadow: 2px 2px 0px 2px rgba(202, 158, 255, 1);
+  box-shadow: 2px 2px 0px 2px rgba(202, 158, 255, 1); 
 }
 
+.icon:hover {
+  /* transform: scale(1.15); */
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+
+}
+
+.about {
+  border-radius: 20px;
+  margin: 30px 50px;
+  font-weight: 600;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  word-spacing: 5px;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2.5px;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  /* box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px; */
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  -webkit-box-shadow: 5px 5px 0px 2px rgba(202, 158, 255, 1);
+  -moz-box-shadow: 5px 5px 0px 2px rgba(202, 158, 255, 1);
+  box-shadow: 5px 5px 0px 2px rgba(202, 158, 255, 1);
+}
+
+.about:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
 
 .about_content {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   margin: 0;
   flex-grow: 1;
   /* flex-wrap: wrap; */
@@ -124,15 +149,12 @@
 .hero1 {
   margin-left: auto;
   max-width: 500px;
-
-
 }
 
 .hero2 {
   /* margin-right: auto; */
   max-width: 350px;
   flex-shrink: 0;
-
 }
 
 .center {
@@ -147,9 +169,11 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
-  gap: 10px 20px; 
+  gap: 10px 20px;
   row-gap: 10px;
   column-gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* .tech > * {
@@ -162,28 +186,30 @@
   max-width: 120px;
   flex: 1 0 20%;
 
-  margin: 15px;
-  transition: transform .2s;
-}
+  border: 2px solid rgb(121, 121, 121);
+  border-radius: 10px;
+  padding: 20px;
 
+  margin: 15px;
+  transition: transform 0.2s; 
+}
 
 .tech_icon:hover {
   transform: scale(1.15);
 }
 
-
-.separator{
-  display:flex;
+.separator {
+  display: flex;
   align-items: center;
 }
 
-.separator .line{
+.separator .line {
   height: 1px;
   flex: 2;
   background-color: rgb(208, 208, 208);
 }
 
-.separator h1{
+.separator h1 {
   padding: 0 2rem;
 }
 
@@ -191,74 +217,96 @@
   margin: 0 auto;
 }
 
+.gradient_text {
+  display: inline-block;
+  font-weight: bolder;
+  margin-bottom: 0;
+  text-align: center;
+  animation: background 10s linear infinite;
+  background: linear-gradient(
+    120deg,
+    rgb(255, 196, 186) 0%,
+    rgb(255, 169, 154) 10%,
+    rgba(78, 170, 76, 1) 20%,
+    rgba(82, 175, 183, 1) 30%,
+    rgb(100, 203, 221) 40%,
+    rgb(255, 118, 221) 50%,
+    rgb(127, 129, 231) 60%,
+    rgb(88, 200, 204) 70%,
+    #96aafd 80%,
+    rgba(199, 201, 88, 1) 90%,
+    rgba(199, 201, 88, 1) 100%
+  );
+  background-size: 1000% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes background {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.slider {
+}
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  /* .main {
-    margin: 80px;
-  } */
 
-  .main h1{
-    font-size: 22px;
+  .main h1 {
+    font-size: 20px;
   }
 
   .pfp {
     max-width: 200px;
   }
 
-  
   .icon {
     max-width: 40px;
   }
-  
+
   .connect a {
     margin: 0;
   }
-  
+
   .about {
-    /* margin-top: -10px; */
+    margin: 10px 5px;
     flex-direction: column;
     /* width: 300px; */
-  } 
+  }
 
   .about p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .tech_icon {
-      margin: 10px;
-      max-width: 42px;
-    
+    margin: 10px;
+    max-width: 42px;
   }
 
-
+  .center h1 {
+    font-size: 22px;
+  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-/* .main {
-    margin: 100px;
-  } */
+
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
-
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1201px) {
-  
 }
-
 
 
 
 /* @media only screen and (min-width: 320px) and (max-width: 480px) {
-
- 
-
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
