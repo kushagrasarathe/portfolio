@@ -108,7 +108,7 @@ export default function Home() {
             <Image src={hero2} alt="profile image" />
           </div>
           <p>
-            Hi, I'm Kushagra Sarathe, I'm a Computer Science Graduate & Frontend
+            Hi, I&#x27;m Kushagra Sarathe, I&#x27;m a Computer Science Graduate & Frontend
             Developer based in India.
           </p>
         </div>
