@@ -13,9 +13,10 @@ export default function Navbar() {
             <h2>Kushagra Sarathe</h2>
           </Link>
           </span>
+          <li><Link href="/">Home</Link></li>
           <li><Link href="#about">About</Link></li>
-          <li>Tech Stack</li>
-          <li>Projects</li>
+          <li><Link href="#tech">Tech Stack</Link></li>
+          <li><Link href="#projects">Projects</Link></li>
         </ul>
       </nav>
     </div>

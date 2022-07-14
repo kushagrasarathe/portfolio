@@ -40,7 +40,7 @@ export default function Home() {
           </div>
           <h1 className={styles.title}>
             <span className={styles.highlight}>Kushagra Sarathe &#128075;</span>
-            ,
+            
           </h1>
         </div>
         <h1 className={`${styles.name} ${styles.typing_effect}`}>
@@ -100,66 +100,125 @@ export default function Home() {
           </div>
         </div>
       </main>
+    
+      <br id="about" />
 
-      <div id="about" className={styles.about}>
+{/* 
+      <div className={styles.separator}>
+        <div className={styles.line}></div>
         <h1>About Me</h1>
-        <div className={styles.about_content}>
+        <div className={styles.line}></div>
+      </div>   */}
+
+
+
+      <h1 className={styles.center}>About Me</h1>
+      <div className={styles.about}>
           <div className={styles.hero2}>
             <Image src={hero2} alt="profile image" />
           </div>
+        {/* <h1>About Me</h1> */}
+        {/* <div className={styles.about_content}> */}
           <p>
             Hi, I&#x27;m Kushagra Sarathe, I&#x27;m a Computer Science Graduate
             & Frontend Developer based in India. I had been doing bug-bounty
             hunting for past 2 years and had been reporting security flaws to
             different companies.
             <br />
+            <br />
             Few months back I found my interst in development and since then
-            I&#x27;ve been focusing on sharpening my frontend development skills by
-            participating in different hackathons and building both solo and team
-            projects.
+            I&#x27;ve been focusing on sharpening my frontend development skills
+            by participating in different hackathons and building both solo and
+            team projects.
           </p>
           <p></p>
+        {/* </div> */}
+      </div>
+
+      {/* <br />
+      <br />
+      <br />
+      <br /> */}
+
+      {/* <div id="tech" className={styles.separator}>
+        <div className={styles.line}></div>
+        <h1>Tech Stack</h1>
+        <div className={styles.line}></div>
         </div>
-        <h2>Tech Stack</h2>
+        <br />
+        <br />
+      <br /> */}
+
+<br id="tech" />
+
+      <h1 className={styles.center}>Tech Stack</h1>
+      <div className={styles.center}>
         <div className={styles.tech}>
           <div className={styles.tech_icon}>
             <Image src={html} alt="profile image" />
+            <span>HTML</span>
+
           </div>
           <div className={styles.tech_icon}>
             <Image src={css} alt="profile image" />
+            <span>CSS</span>
+
           </div>
           <div className={styles.tech_icon}>
             <Image src={tailwind} alt="profile image" />
+            <span>Tailwind</span>
+
           </div>
           <div className={styles.tech_icon}>
             <Image src={bootstrap} alt="profile image" />
+            <span>Bootstrap</span>
+
           </div>
           <div className={styles.tech_icon}>
             <Image src={js} alt="profile image" />
+            <span>JavaScript</span>
+
           </div>
           <div className={styles.tech_icon}>
             <Image src={reactjs} alt="profile image" />
+            <span>ReactJS</span>
+
           </div>
           <div className={styles.tech_icon}>
             <Image src={nextjs} alt="profile image" />
+            <span>NextJS</span>
+
           </div>
           <div className={styles.tech_icon}>
             <Image src={node} alt="profile image" />
+            <span>NodeJS</span>
+
           </div>
           <div className={styles.tech_icon}>
             <Image src={linux} alt="profile image" />
+            <span>Linux</span>
+
           </div>
           <div className={styles.tech_icon}>
             <Image src={git} alt="profile image" />
+            <span>Git</span>
           </div>
           <div className={styles.tech_icon}>
             <Image src={bash} alt="profile image" />
+            <span>Bash</span>
+
           </div>
           <div className={styles.tech_icon}>
             <Image src={figma} alt="profile image" />
+            <span>Figma</span>
+
           </div>
         </div>
       </div>
+      <br />
+      <br />
+      <br />
+ 
 
       {/* <div>
         <h2>Projects</h2>
@@ -170,4 +229,5 @@ export default function Home() {
       </div> */}
     </div>
   );
+
 }
