@@ -7,10 +7,15 @@ export default function Navbar() {
     <div>
       <nav className={styles.nav}>
             
-        <ul>
+        <ul className={styles.navList}>
+          <span className={styles.navLogo}>
           <Link href="/">
             <h2>Kushagra Sarathe</h2>
           </Link>
+          </span>
+          <li><Link href="#about">About</Link></li>
+          <li>Tech Stack</li>
+          <li>Projects</li>
         </ul>
       </nav>
     </div>

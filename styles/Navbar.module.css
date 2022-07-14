@@ -6,11 +6,40 @@
   min-height: 8vh;
   margin: 0;
   padding: 0.2rem;
-  background: rgb(17, 19, 19);
+  /* background: rgb(17, 19, 19); */
+  background: rgb(10, 10, 10, 0.4);
   
   -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,1);
 -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,1);
 box-shadow: 0px 5px 20px 0px rgba(0,0,0,1);
 
   /* background: rgba(17, 19, 19, 0.775); */
+
 }
+
+.navList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.navList li {
+  /* margin-left: auto; */
+  margin: 0 40px 0 0px;
+  list-style: none;
+  transition: transform .2s;
+
+}
+
+.navList li:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+
+}
+
+.navLogo {
+  margin-right: auto;
+  cursor: pointer;
+}
+
