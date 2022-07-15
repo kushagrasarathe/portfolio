@@ -2,19 +2,43 @@
   padding: 0 2rem;
 }
 
+.bubble {
+  margin-top: 100px;
+/*   border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%; */
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 110% 50%;
+  width: 55%;
+  height: 100%;
+  /* transform: translate(5%, 0%); */
+  
+  /* margin: 100px auto; */
+  position: relative;
+  /* bottom: 0; */  
+  z-index: 10;
+  width: 100%;
+  background-color: rgb(150, 190, 255);
+  background-color: rgba(9, 9, 9, 0.742);
+  height: 85%;
+}
+
+
+
 .main {
-  min-height: 84vh;
-  margin-top: 60px;
+  min-height: 88vh;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   align-items: center;
-
+  /* color: black; */
 }
 
 .main h1 {
+  
   font-size: 40px;
   /* margin: 15px; */
 }
@@ -73,7 +97,6 @@
   max-width: 84px;
   /* border-radius: 10px; */
   /* transition: transform 0.2s; */
-  
 
   border-radius: 10px;
   font-weight: 600;
@@ -94,15 +117,14 @@
   touch-action: manipulation;
   -webkit-box-shadow: 2px 2px 0px 2px rgba(202, 158, 255, 1);
   -moz-box-shadow: 2px 2px 0px 2px rgba(202, 158, 255, 1);
-  box-shadow: 2px 2px 0px 2px rgba(202, 158, 255, 1); 
+  box-shadow: 2px 2px 0px 2px rgba(202, 158, 255, 1);
 }
 
-.icon:hover {
+.icon:active {
   /* transform: scale(1.15); */
   box-shadow: 0px 0px 0px 0px;
   top: 5px;
   left: 5px;
-
 }
 
 .about {
@@ -191,7 +213,7 @@
   padding: 20px;
 
   margin: 15px;
-  transition: transform 0.2s; 
+  transition: transform 0.2s;
 }
 
 .tech_icon:hover {
@@ -250,13 +272,7 @@
   }
 }
 
-.slider {
-}
-
-
-
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-
   .main h1 {
     font-size: 20px;
   }
@@ -266,7 +282,11 @@
   }
 
   .icon {
-    max-width: 40px;
+    max-width: 58px;
+    padding: 2px;
+    -webkit-box-shadow: 2px 2px 0px 2px rgba(202, 158, 255, 1);
+    -moz-box-shadow: 2px 2px 0px 2px rgba(202, 158, 255, 1);
+    box-shadow: 0px 0px 0px 2px rgba(202, 158, 255, 1);
   }
 
   .connect a {
@@ -276,7 +296,7 @@
   .about {
     margin: 10px 5px;
     flex-direction: column;
-    
+
     /* width: 300px; */
   }
 
@@ -299,24 +319,29 @@
   .center h1 {
     font-size: 22px;
   }
-
-
 }
 
 @media only screen and (max-width: 768px) {
   .about {
     margin: 10px 5px;
     flex-direction: column;
-    
+
     /* width: 300px; */
   }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .about {
+    margin: 10px 5px;
+    flex-direction: column;
+
+    /* width: 300px; */
+  }
+
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
@@ -324,8 +349,6 @@
 
 @media only screen and (min-width: 1201px) {
 }
-
-
 
 /* @media only screen and (min-width: 320px) and (max-width: 480px) {
 }
