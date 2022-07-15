@@ -41,11 +41,11 @@ export default function Layout({ children }) {
                 <a className={styles.navlink}>Tech</a>
               </Link>
             </li>
-            <li className={styles.navitem}>
-              <Link href="#tech">
-                <a className={styles.navlink}>PoW</a>
+            {/* <li className={styles.navitem}>
+              <Link href="#projects">
+                <a className={styles.navlink}>Projects</a>
               </Link>
-            </li>
+            </li> */}
           </ul>
           <button
             onClick={handleClick}

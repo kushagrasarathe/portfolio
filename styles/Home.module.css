@@ -21,6 +21,7 @@
   width: 100%;
   background-color: rgb(150, 190, 255);
   background-color: rgba(9, 9, 9, 0.742);
+  /* background-color: rgba(9, 9, 9, 0.89); */
   height: 85%;
 }
 
@@ -97,7 +98,7 @@
   max-width: 84px;
   /* border-radius: 10px; */
   /* transition: transform 0.2s; */
-
+  margin-top: 30px;
   border-radius: 10px;
   font-weight: 600;
   text-align: center;
@@ -108,7 +109,7 @@
   align-items: center;
   letter-spacing: 2.5px;
   cursor: pointer;
-  border: 2px solid;
+  border: 1px solid;
   padding: 0.25rem 0.5rem;
   /* box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px; */
   position: relative;
@@ -153,11 +154,11 @@
   box-shadow: 5px 5px 0px 2px rgba(202, 158, 255, 1);
 }
 
-/* .about:active {
+.about:active {
   box-shadow: 0px 0px 0px 0px;
   top: 5px;
   left: 5px;
-} */
+}
 
 .about_content {
   display: flex;
@@ -305,32 +306,52 @@
   }
 
   .tech_icon {
-    font-size: 14px;
-    margin: 10px;
-    max-width: 100px;
+    /* font-size: 14px; */
+    margin: 3px;
+    max-width: 70px;
     /* height: 120px; */
     padding: 10px;
   }
 
   .tech_icon span {
-    /* margin-right: 20px; */
+    font-size: 12px;
+    /* margin: 0 auto; */
   }
 
   .center h1 {
     font-size: 22px;
   }
+
+
+  .bubble {
+    margin-top: 10px;
+    border-radius: 45% -45%;
+  }
+  
 }
 
 @media only screen and (max-width: 768px) {
+
+  .icon {
+    max-width: 64px;
+  }
+
   .about {
     margin: 10px 5px;
     flex-direction: column;
 
     /* width: 300px; */
   }
+  
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+
+  .icon {
+    max-width: 65px;
+    padding: 2px;
+  }
+
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {

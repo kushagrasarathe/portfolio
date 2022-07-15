@@ -29,7 +29,7 @@ export default function Navbar() {
             <Link href="#tech">Tech Stack</Link>
           </li>
           <li>
-            <Link href="#projects">PoW</Link>
+            <Link href="#projects">Projects</Link>
           </li>
         </ul>
         <button
