@@ -82,11 +82,16 @@
 }
 
 .footer a {
-  display: flex;
+    margin: 0 5px;
+    text-decoration: underline;
+    /* display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
+  flex-grow: 1; */
 }
+
+
+  
 
 @media only screen and (max-width: 768px) {
   .navmenu {

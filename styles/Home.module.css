@@ -300,14 +300,16 @@
     font-size: 22px;
   }
 
-  .read_more {
-    visibility: hidden;
-  }
 
-  .read_more_true {
-    visibility: visible;
-  }
+}
 
+@media only screen and (max-width: 768px) {
+  .about {
+    margin: 10px 5px;
+    flex-direction: column;
+    
+    /* width: 300px; */
+  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
