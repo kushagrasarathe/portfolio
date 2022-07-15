@@ -25,6 +25,13 @@ import bash from "../src/assets/13.png";
 import figma from "../src/assets/14.png";
 
 export default function Home() {
+  
+  const [readMore, setReadMore] = useState(false)
+  function read() {
+    setReadMore(!readMore)
+    console.log(readMore)
+  }
+  
   const el = useRef(null);
 
   useEffect(() => {
@@ -32,7 +39,7 @@ export default function Home() {
       strings: [
         "Frontend Developer",
         "Security Enthusiast",
-        "Open Source Contributor",
+        // "Open Source Contributor",
       ],
       startDelay: 300,
       typeSpeed: 100,
@@ -144,10 +151,11 @@ export default function Home() {
           companies.
           <br />
           <br />
-          Few months back I found my interst in development and since then
+          <button className={readMore ? `${styles.read_more_true}` : ``} onClick={read}>Read</button>
+          <span id="read_more" className={styles.read_more}>Few months back I found my interst in development and since then
           I&#x27;ve been focusing on sharpening my frontend development skills
           by participating in different hackathons and building both solo and
-          team projects.
+          team projects.</span>
         </p>
         <p></p>
       </div>

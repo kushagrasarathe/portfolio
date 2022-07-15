@@ -1,0 +1,140 @@
+.header {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  background: rgb(10, 10, 10);
+
+  /* border-bottom: 1px solid #e2e8f0; */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 35px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #222222;
+}
+
+.navmenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.navitem {
+  margin-left: 5rem;
+  transition: transform .2s;
+  /* cursor: pointer; */
+}
+
+.navitem:hover {
+    transform: scale(1.12);
+}
+
+.navlink {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #778aa5;
+  /* text-transform: uppercase; */
+}
+
+.navlink:hover {
+  /* color: #a2b3ff; */
+  color: rgba(202, 158, 255, 1);
+}
+
+.navlogo {
+  font-size: 1.8rem;
+  font-weight: 500;
+  /* font-size: 72px; */
+  background: linear-gradient(45deg, #f3ec78, #af4261);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* color: #482ff7; */
+}
+
+.container {
+  padding: 0 2rem;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .navmenu {
+    z-index: 100;
+    position: fixed;
+    left: -100%;
+    top: 4rem;
+    flex-direction: column;
+    background: rgb(10, 10, 10);
+    margin: 0;
+    padding: 0;
+    /* background-color: #fff; */
+    width: 100%;
+    /* height: 80%; */
+    /* border-radius: 10px; */
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .navlogo {
+    margin-right: auto;
+  }
+
+  .navmenu.active {
+    left: 0;
+  }
+
+  .navitem {
+    margin: 10px 0;
+    padding: 20px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}

@@ -4,7 +4,7 @@
 
 .main {
   min-height: 84vh;
-  margin-top: 120px;
+  margin-top: 60px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@
 
 .main h1 {
   font-size: 40px;
-  margin: 15px;
+  /* margin: 15px; */
 }
 
 @keyframes typing {
@@ -131,11 +131,11 @@
   box-shadow: 5px 5px 0px 2px rgba(202, 158, 255, 1);
 }
 
-.about:active {
+/* .about:active {
   box-shadow: 0px 0px 0px 0px;
   top: 5px;
   left: 5px;
-}
+} */
 
 .about_content {
   display: flex;
@@ -253,6 +253,8 @@
 .slider {
 }
 
+
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 
   .main h1 {
@@ -274,6 +276,7 @@
   .about {
     margin: 10px 5px;
     flex-direction: column;
+    
     /* width: 300px; */
   }
 
@@ -282,13 +285,29 @@
   }
 
   .tech_icon {
+    font-size: 14px;
     margin: 10px;
-    max-width: 42px;
+    max-width: 100px;
+    /* height: 120px; */
+    padding: 10px;
+  }
+
+  .tech_icon span {
+    /* margin-right: 20px; */
   }
 
   .center h1 {
     font-size: 22px;
   }
+
+  .read_more {
+    visibility: hidden;
+  }
+
+  .read_more_true {
+    visibility: visible;
+  }
+
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
